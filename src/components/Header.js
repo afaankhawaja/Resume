@@ -4,6 +4,7 @@ import { MdEmail } from 'react-icons/md';
 import generatePDF from '../pdfGenerator'; // Import the PDF generator function
 import '../assets/css/Header.css'; // Ensure you have a CSS file for styling
 import profile from '../assets/images/peng.jpg';
+import image from '../assets/images/profile.png';
 
 const Header = () => {
   const resumeRef = useRef();
@@ -34,6 +35,8 @@ const Header = () => {
           <a href="mailto:aafaan02@gmail.com"><MdEmail size={30} style={{ color: 'Pink' }} /></a>
         </div>
       </div>
+      <a href={image} download className="download-button">Download Resume</a>
+
     </header>
   );
 };

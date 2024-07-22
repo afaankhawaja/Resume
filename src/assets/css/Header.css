@@ -35,16 +35,16 @@
   }
   .download-button {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 150px;
     padding: 10px 20px;
-    background-color: #0073b1;
-    color: #fff;
+    background-color: #a6c5d6;
+    color: #000000;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
   }
   
   .download-button:hover {
-    background-color: #005f8d;
+    background-color: #5dbae9;
   }
   

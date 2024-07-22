@@ -1,24 +1,19 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
-import generatePDF from '../pdfGenerator'; // Import the PDF generator function
+
 import '../assets/css/Header.css'; // Ensure you have a CSS file for styling
 import profile from '../assets/images/profile.png';
-import image from '../assets/images/CV.png';
 
 const Header = () => {
-  const resumeRef = useRef();
-
-  const handleDownload = () => {
-    generatePDF(resumeRef.current.innerHTML);
-  };
+  
 
   return (
     <header className="header">
       <div className="profile-pic-container">
         <img src={profile} alt="Profile" className="profile-pic" />
       </div>
-      <div className="header-content" ref={resumeRef}>
+      <div className="header-content" >
         <h1>Afaan Ahmad</h1>
         <p>Reactjs Developer | Aspiring Junior MERN Stack Developer | React & Node.js Enthusiast</p>
         <div className="social-media">
@@ -35,7 +30,6 @@ const Header = () => {
           <a href="mailto:aafaan02@gmail.com"><MdEmail size={30} style={{ color: 'Pink' }} /></a>
         </div>
       </div>
-      <a href={image} download className="download-button">Download Resume</a>
 
     </header>
   );

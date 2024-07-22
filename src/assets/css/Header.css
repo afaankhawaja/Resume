@@ -3,9 +3,7 @@
     align-items: center;
     padding: 20px;
   }
-  .header button {
-  margin-top: 200px;
-  }  
+  
   .profile-pic-container {
     flex-shrink: 0;
     /* margin-right: 15px; */
@@ -35,14 +33,31 @@
   }
   .download-button {
     display: inline-block;
-    margin-top: 150px;
-    padding: 10px 20px;
+    margin-top: 5px;
+    padding: 8px 8px;
     background-color: #a6c5d6;
     color: #000000;
     text-decoration: none;
     border-radius: 5px;
-    font-weight: bold;
+    width: 70px;
+    height: 22px;
+    
   }
+  @media (max-width: 600px) {
+    .download-button {
+    display: inline-block;
+    margin-top: 5px;
+    
+    padding: 8px 8px;
+    background-color: #a6c5d6;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 70px;
+    height: 22px;
+      }
+  }
+  
   
   .download-button:hover {
     background-color: #5dbae9;

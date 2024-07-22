@@ -1,0 +1,65 @@
+/* General button styles */
+.download-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color:  #52c4d8; /* Green */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  /* Hover effect */
+  .download-button:hover {
+    background-color: #1ab7f5;
+    transform: translateY(-3px);
+  }
+  
+  /* Focus effect */
+  .download-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #1ab7f5;
+  }
+  
+  /* Active effect */
+  .download-button:active {
+    background-color: #1ab7f5;
+    transform: translateY(1px);
+  }
+  
+  .download-section {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 600px) {
+    .download-button {
+      width: 80%;
+      padding: 15px;
+      font-size: 16px;
+    }
+  }
+  
+  /* Tablet styles */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .download-button {
+      width: auto;
+      padding: 12px 25px;
+      font-size: 17px;
+    }
+  }
+  
+  /* Desktop styles */
+  @media (min-width: 1025px) {
+    .download-button {
+      width: auto;
+      padding: 15px 30px;
+      font-size: 18px;
+    }
+  }
+  

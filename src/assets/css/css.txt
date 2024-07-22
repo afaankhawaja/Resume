@@ -1,0 +1,52 @@
+header/////////////////
+  ///////////////////////
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    flex-direction: row; /* Default layout for larger screens */
+  }
+  
+  .profile-pic-container {
+    flex-shrink: 0;
+    margin-left: 50px;
+  }
+  
+  .profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .header-content {
+    flex-grow: 1;
+    margin-left: 20px; /* Adjusted for spacing */
+  }
+  
+  .social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .social-media a:hover {
+    color: #cedfe9; /* Adjust the hover color as needed */
+  }
+  
+  .download-button {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 8px 8px;
+    background-color: #a6c5d6;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 70px;
+    height: 22px;
+  }
+  
+  .download-button:hover {
+    background-color: #5dbae9;
+  }
+  ///////////////////////////

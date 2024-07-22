@@ -1,149 +1,133 @@
 .header {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  flex-direction: row; /* Default layout for larger screens */
-}
-
-.profile-pic-container {
-  flex-shrink: 0;
-  margin-left: 50px;
-}
-
-.profile-pic {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.header-content {
-  flex-grow: 1;
-  margin-left: 20px; /* Adjusted for spacing */
-}
-
-.social-media a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: inherit;
-}
-
-.social-media a:hover {
-  color: #cedfe9; /* Adjust the hover color as needed */
-}
-
-.download-button {
-  display: inline-block;
-  margin-top: 5px;
-  padding: 8px 8px;
-  background-color: #a6c5d6;
-  color: #000000;
-  text-decoration: none;
-  border-radius: 5px;
-  width: 70px;
-  height: 22px;
-}
-
-.download-button:hover {
-  background-color: #5dbae9;
-}
-
-/* Mobile styles */
-@media (max-width: 600px) {
-  .header {
-    flex-direction: column; /* Stack elements vertically */
-    text-align: center; /* Center-align text */
-    padding: 10px;
-  }
-
-  .profile-pic-container {
-    margin: 0 auto; /* Center the profile picture */
-  }
-
-  .profile-pic {
-    width: 120px;
-    height: 120px;
-  }
-
-  .header-content {
-    margin-left: 0; /* Remove left margin */
-    margin-top: 15px; /* Add top margin */
-  }
-
-  .social-media a {
-    margin: 5px; /* Increase spacing between icons */
-  }
-
-  .download-button {
-    width: 100px;
-    height: 30px;
-    font-size: 16px;
-    padding: 10px;
-  }
-}
-
-/* Tablet styles */
-@media (min-width: 601px) and (max-width: 1024px) {
-  .header {
-    flex-direction: row;
-    text-align: left; /* Default text alignment */
-    padding: 15px;
-  }
-
-  .profile-pic-container {
-    margin-left: 20px;
-  }
-
-  .profile-pic {
-    width: 140px;
-    height: 140px;
-  }
-
-  .header-content {
-    margin-left: 20px;
-  }
-
-  .social-media a {
-    margin: 5px;
-  }
-
-  .download-button {
-    width: 80px;
-    height: 25px;
-    font-size: 14px;
-    padding: 8px;
-  }
-}
-
-/* Desktop styles */
-@media (min-width: 1025px) {
-  .header {
-    flex-direction: row;
-    text-align: left;
+    display: flex;
+    align-items: center;
     padding: 20px;
   }
-
+  
   .profile-pic-container {
-    margin-left: 50px;
+    flex-shrink: 0;
+    margin-right: 1px;
+    margin-left: 10px;
+  
   }
-
+  
   .profile-pic {
     width: 160px;
     height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
   }
-
+  
   .header-content {
-    margin-left: 20px;
+    flex-grow: 1;
   }
-
+  
   .social-media a {
-    margin: 10px;
+    margin: 0px 10px;
+    text-decoration: none;
+    color: inherit;
   }
-
+  
+  .social-media a:hover {
+    color: #cedfe9; /* Adjust the hover color as needed */
+  }
   .download-button {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 8px 8px;
+    background-color: #a6c5d6;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
     width: 70px;
     height: 22px;
-    font-size: 12px;
-    padding: 8px;
+    
   }
-}
+  @media (max-width: 600px) {
+    .download-button {
+    display: inline-block;
+    margin-top: 5px;
+    
+    padding: 8px 8px;
+    background-color: #a6c5d6;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 70px;
+    height: 22px;
+      }
+  }
+  
+  
+  .download-button:hover {
+    background-color: #5dbae9;
+  }
+
+  
+  /* Mobile styles */
+  @media (max-width: 600px) {
+    .header {
+      flex-direction: column; /* Stack elements vertically */
+      text-align: center; /* Center-align text */
+      padding: 10px;
+    }
+  
+    .profile-pic-container {
+      margin: 0 auto; /* Center the profile picture */
+    }
+  
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .header-content {
+      margin-left: 0; /* Remove left margin */
+      margin-top: 15px; /* Add top margin */
+    }
+  
+    .social-media a {
+      margin: 5px; /* Increase spacing between icons */
+    }
+  
+    .download-button {
+      width: 100px;
+      height: 30px;
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+  
+  /* Tablet styles */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .header {
+      flex-direction: row;
+      text-align: left; /* Default text alignment */
+      padding: 15px;
+    }
+  
+    .profile-pic-container {
+      margin-left: 20px;
+    }
+  
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+    }
+  
+    .header-content {
+      margin-left: 20px;
+    }
+  
+    .social-media a {
+      margin: 5px;
+    }
+  
+    .download-button {
+      width: 80px;
+      height: 25px;
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  

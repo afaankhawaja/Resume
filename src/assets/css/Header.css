@@ -1,0 +1,50 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  .header button {
+  margin-top: 200px;
+  }  
+  .profile-pic-container {
+    flex-shrink: 0;
+    /* margin-right: 15px; */
+    margin-left: 50px;
+  
+  }
+  
+  .profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .header-content {
+    flex-grow: 1;
+  }
+  
+  .social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .social-media a:hover {
+    color: #cedfe9; /* Adjust the hover color as needed */
+  }
+  .download-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #0073b1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .download-button:hover {
+    background-color: #005f8d;
+  }
+  

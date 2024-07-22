@@ -57,3 +57,11 @@
     margin: 0;
   }
   
+  @media (max-width: 600px) {
+    .timeline {
+        position: relative;
+        margin: 30px 5px;
+        padding: 0;
+        list-style: none;
+      }
+  }

@@ -3,7 +3,7 @@ import './assets/css/styles.css';
 import Header from './components/Header';
 import About from './components/About';
 // import Experience from './components/Experience';
-// import Education from './components/Education';
+import Education from './components/Education';
 // import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Footer from './components/Footer';
@@ -19,7 +19,7 @@ function App() {
       <Header />
       <About/>
       <Timeline/>
-      {/* <Education/> */}
+      <Education/>
       <Skills/>
       {/* <Experience/> */}
       {/* <Projects/> */}

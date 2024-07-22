@@ -9,12 +9,7 @@ const Timeline = () => {
         location: 'Ensemble-ai',
         description: 'Working as React developer on a multiple projects.'
       },
-    {
-      date: '2020 - 2024',
-      title: 'Bachelor\'s Degree in Computer Science',
-      location: 'Capital University of Science & Technology (CUST)',
-      description: 'Relevant coursework: Data Structures, Web Development, Database Management.'
-    },
+    
     {
       date: 'July 2023 - September 2023',
       title: 'Intern',
@@ -40,8 +35,12 @@ const Timeline = () => {
       description: 'Created a Redux Store project to manage state efficiently in React applications.'
     }
   ];
+  
 
   return (
+    <>
+            <h2>Experience</h2>
+
     <div className="timeline">
       {timelineData.map((item, index) => (
         <div className="timeline-item" key={index}>
@@ -54,7 +53,9 @@ const Timeline = () => {
           </div>
         </div>
       ))}
-    </div>
+      </div>
+     
+    </>
   );
 };
 

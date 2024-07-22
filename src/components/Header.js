@@ -3,8 +3,8 @@ import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import generatePDF from '../pdfGenerator'; // Import the PDF generator function
 import '../assets/css/Header.css'; // Ensure you have a CSS file for styling
-import profile from '../assets/images/peng.jpg';
-import image from '../assets/images/profile.png';
+import profile from '../assets/images/profile.png';
+import image from '../assets/images/CV.png';
 
 const Header = () => {
   const resumeRef = useRef();

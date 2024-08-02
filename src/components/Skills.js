@@ -25,15 +25,16 @@ const Skills = () => {
     },
   ];
   return (
-    <div>
-      <h2>Skills</h2>
+   
+    <div className="timeline-container">
+      <h2 className="timeline-header">Skills</h2>
       <div className="timeline">
-        {skills.map((skill, index) => (
-          <div className="timeline-item" key={index}>
-            <div className="timeline-dot"></div>
+        {skills.map((item, index) => (
+          <div className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`} key={index}>
             <div className="timeline-content">
-              <h3 className="timeline-title">{skill.name}</h3>
-              <div className="timeline-description">{skill.skills}</div>
+              <h3 className="timeline-title">{item.name}</h3>
+              <div className="timeline-description">{item.skills}</div>
+             
             </div>
           </div>
         ))}

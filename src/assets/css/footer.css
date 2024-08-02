@@ -1,10 +1,10 @@
-/* General button styles */
+/* General button styles
 .download-button {
     display: inline-block;
     padding: 15px 30px;
     font-size: 18px;
     color: white;
-    background-color:  #52c4d8; /* Green */
+    background-color:  #52c4d8; 
     border: none;
     border-radius: 5px;
     text-align: center;
@@ -13,19 +13,16 @@
     margin-top: 20px;
   }
   
-  /* Hover effect */
   .download-button:hover {
     background-color: #1ab7f5;
     transform: translateY(-3px);
   }
   
-  /* Focus effect */
   .download-button:focus {
     outline: none;
     box-shadow: 0 0 5px #1ab7f5;
   }
   
-  /* Active effect */
   .download-button:active {
     background-color: #1ab7f5;
     transform: translateY(1px);
@@ -36,7 +33,6 @@
     padding: 20px 0;
   }
   
-  /* Mobile styles */
   @media (max-width: 600px) {
     .download-button {
       width: 80%;
@@ -45,7 +41,6 @@
     }
   }
   
-  /* Tablet styles */
   @media (min-width: 601px) and (max-width: 1024px) {
     .download-button {
       width: auto;
@@ -54,7 +49,6 @@
     }
   }
   
-  /* Desktop styles */
   @media (min-width: 1025px) {
     .download-button {
       width: auto;
@@ -62,4 +56,107 @@
       font-size: 18px;
     }
   }
-  
+   */
+   /* footer.css */
+.footer-container {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  margin-top: 40px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+}
+
+.honors-awards, .extracurricular-activities {
+  margin-bottom: 40px;
+}
+
+.honor-item {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.honor-title {
+  font-weight: bold;
+  color: #3498db;
+}
+
+.activities-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.activity-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+}
+
+.activity-title {
+  font-weight: bold;
+  color: #3498db;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.activity-item p {
+  margin: 0;
+  color: #34495e;
+}
+
+.download-section {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: white;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.download-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+}
+
+.download-button:active {
+  transform: translateY(1px);
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .activity-item {
+    padding: 15px;
+  }
+
+  .download-button {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+}

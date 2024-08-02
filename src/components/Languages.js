@@ -18,7 +18,7 @@ const Languages = () => {
   ]
   return (
     <>
-    <h2>Languages</h2>
+    {/* <h2>Languages</h2>
 <div className="timeline">
     
       {languages.map((language, index) => (
@@ -30,7 +30,20 @@ const Languages = () => {
           </div>
         </div>
       ))}
-     </div> 
+     </div>  */}
+      <div className="timeline-container">
+      <h2 className="timeline-header">Languages</h2>
+      <div className="timeline">
+        {languages.map((item, index) => (
+          <div className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`} key={index}>
+            <div className="timeline-content">
+              <h3 className="timeline-title">{item.name}</h3>
+              <p className="timeline-description">{item.level}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
      </>
   );
 };

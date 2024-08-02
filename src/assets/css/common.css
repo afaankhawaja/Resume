@@ -1,0 +1,71 @@
+/* common.css */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --text-color: #ffffff;
+  }
+  
+  .section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+  }
+  
+  .section-heading.parallelogram {
+    position: relative;
+    display: inline-block;
+    padding: 15px 60px;
+    margin-bottom: 40px;
+    overflow: hidden;
+  }
+  
+  .section-heading.parallelogram::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: calc(100% + 40px);
+    height: 100%;
+    background-color: var(--primary-color);
+    transform: skew(-20deg);
+    z-index: 1;
+  }
+  
+  .section-heading.parallelogram span {
+    position: relative;
+    z-index: 2;
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Variations for different sections */
+  .section-heading.parallelogram.education::before {
+    background-color: #2ecc71;
+  }
+  
+  .section-heading.parallelogram.experience::before {
+    background-color: #e74c3c;
+  }
+  
+  .section-heading.parallelogram.skills::before {
+    background-color: #f39c12;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .section-heading.parallelogram span {
+      font-size: 1.5rem;
+    }
+    
+    .section-heading.parallelogram {
+      padding: 12px 40px;
+    }
+  }

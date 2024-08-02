@@ -18,7 +18,7 @@ const Education = ()=>{
   ]
     return(
         <>
-        <h2>Education</h2>
+        {/* <h2>Education</h2>
         <div className='timeline'>
         {Educations.map((item, index) => (
           <div className="timeline-item" key={index}>
@@ -31,7 +31,22 @@ const Education = ()=>{
             </div>
           </div>
         ))}
+      </div> */}
+      <div className="timeline-container">
+      <h2 className="timeline-header">Education</h2>
+      <div className="timeline">
+        {Educations.map((item, index) => (
+          <div className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`} key={index}>
+            <div className="timeline-content">
+              <div className="timeline-date">{item.date}</div>
+              <h3 className="timeline-title">{item.title}</h3>
+              {item.location && <h4 className="timeline-location">{item.location}</h4>}
+              <p className="timeline-description">{item.description}</p>
+            </div>
+          </div>
+        ))}
       </div>
+    </div>
       </>
     )
 }
